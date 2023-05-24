@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Villa Odessa</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker3.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+            
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Villa</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+             <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        
+        <!-- Header Slider -->
+        <div class="swiper-container header-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide first">
+                </div>
+                <div class="swiper-slide second">
+                </div>
+                <div class="swiper-slide third">
+                </div>
+            </div> <!-- end of swiper-wrapper -->
+        </div> <!-- end of swiper-container -->
+        <!-- end of header slider -->
+
+        <div class="text-container">
+            <h1>Туристичний хаб <br>"Villa Odessa"</h1>
+            <a class="btn-solid-lg popup-with-move-anim" href="#header-details-lightbox">Замовити</a>
+          
+        </div> <!-- end of text-container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Header Lightbox -->
+    <!-- Lightbox -->
+	<div id="header-details-lightbox" class="lightbox-form zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-12">
+                    <p>Заповніть форму</p>
+                    
+                    <!-- Booking Form -->
+                    <!-- autocomplete = off to avoid display problems in mobile view -->
+                    <form id="bookingForm" data-toggle="validator" data-focus="false" autocomplete="off">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="name" required>
+                            <label class="label-control" for="name">Ваше ім'я</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="email" required>
+                            <label class="label-control" for="email">Ваш e-mail</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="phone" required>
+                            <label class="label-control" for="phone">Ваш номер</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="people" required>
+                            <label class="label-control" for="people">К-сть людей</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control-select" id="room" required>
+                                <option class="select-option" value="" disabled selected>Оберіть номер</option>
+                                <option class="select-option" value="Balcony Room">Одномістний</option>
+                                <option class="select-option" value="Panoramic Room">Двомістний</option>
+                                <option class="select-option" value="Presidential Room">Сімейний</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- readonly is enabled to avoid display problems in mobile view -->
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="start" readonly required>
+                            <label class="label-control" for="start">Дата в'їзду</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="end" readonly required>
+                            <label class="label-control" for="end">Дата виїзду</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Замовити</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of booking form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-form -->
+    <!-- end of lightbox -->
+    <!-- end of header lightbox -->
+
+
+    <!-- Description -->
+    <div id="description" class="slider-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="green">Villa Odessa</h2>
+                    <p class="p-heading">Villa Odessa- це унікальний туристичний хаб типу "ліжко та сніданок", розташований на чудовому узбережжі Чорного моря, готовий приймати туристів, які шукають спокою, цілий рік.</p>
+                </div> <!-- end of col -->
+                <div class="col-lg-12">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="images/description-1.jpg" data-effect="fadeIn"><img class="img-fluid" src="images/description-1.jpg" alt="alternative"></a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="images/description-2.jpg" data-effect="fadeIn"><img class="img-fluid" src="images/description-2.jpg" alt="alternative"></a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="images/description-3.jpg" data-effect="fadeIn"><img class="img-fluid" src="images/description-3.jpg" alt="alternative"></a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="images/description-4.jpg" data-effect="fadeIn"><img class="img-fluid" src="images/description-4.jpg" alt="alternative"></a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="images/description-5.jpg" data-effect="fadeIn"><img class="img-fluid" src="images/description-5.jpg" alt="alternative"></a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="images/description-6.jpg" data-effect="fadeIn"><img class="img-fluid" src="images/description-6.jpg" alt="alternative"></a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of description -->
+
+
+    <!-- Facilities -->
+    <div class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Наші пропозиції</h2>
+                    <p class="p-heading">Все, що потрібно для спокійного відпочинку. Послуги були розроблені з урахуванням потреб туристів з дуже високими вимогами з усього світу</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Tabs Links -->
+                    <ul class="nav nav-tabs" id="villaTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">
+                                <i class="fas fa-utensils"></i><span>Ресторан</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">
+                                <i class="fas fa-glass-martini-alt"></i><span>Тераса</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">
+                                <i class="fas fa-sun"></i><span>Пляж</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true">
+                                <i class="fas fa-futbol"></i><span>Ігрова зона</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">
+                                <i class="fas fa-car"></i><span>Паркінг</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end of tabs links -->
+
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="villaTabsContent">
+                        
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="images/facilities-tab-1.jpg" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Смачна місцева їжа, приготована на повільному вогні</h3>
+                                        <p>Ми подаємо смачні страви місцевої кухні, приготовані з натуральних інгредієнтів з місцевих ферм та ринків. Окрім асортименту м'ясних страв, Villa також пристосована для вегетаріанців. </p>
+                                        <p>Вам не потрібно поспішати вранці, щоб отримати смачну їжу, оскільки час подачі сніданку продовжується до полудня.</p>
+                                        <p class="green"><strong>Відкрито з 08:00 - 23:00</strong></p>
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Красива тераса для кави та напоїв</h3>
+                                        <p>Почніть свій день відпочинку з підбадьорливої кави та виберіть місце для відпочинку або сплануйте свої подорожі до навколишніх історичних місць та туристичних визначних пам'яток.</p>
+                                        <p>Крім алкогольних напоїв, ми також пропонуємо великий асортимент смузі та безалкогольних коктейлів.</p>
+                                        <p class="green"><strong>Цілодобово</strong></p>
+
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="images/facilities-tab-2.jpg" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="images/facilities-tab-3.jpg" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Теплі пляжі та цілющі води</h3>
+                                        <p>Поруч є 2 прекрасних сонячних пляжі, зручно обладнаних шезлонгами, парасольками, пляжним баром, душовими кабінами та навченими рятувальниками для вашої безпеки.</p>                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Золотистий загар</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Золоті піски та кришталеві води</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Зручності до максимального розслаблення</div>
+                                            </li>
+                                        </ul>
+                                       
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Розваги для дітей</h3>
+                                        <p>Діти мають власний простір для розваг та ігор під наглядом дорослих, а ви можете насолодитися кількома хвилинами релаксації у своєму номері або розвагами на пляжі.</p>
+                                        <p>Ви можете стежити за ними за допомогою мобільного додатку відеоспостереження, розробленого для батьків.</p>
+                                        <p class="green"><strong>Працює із 08:00 - 22:00</strong></p>
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="images/facilities-tab-4.jpg" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid rounded" src="images/facilities-tab-5.jpg" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Не потрібно турбуватися про своє авто</h3>
+                                        <p>Пропонуємо безкоштовну парковку для всіх своїх клієнтів у безпечному та легкодоступному місці. Парковка охороняється та контролюється спеціальними камерами для вашого спокою</p>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Вільний під'їзд для будь-якого типу автомобіля та універсалу</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Відеоспостереження та закритий доступ як стандартні опції</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Насолоджуйтесь відпочинком, не турбуючись про автомобіль</div>
+                                            </li>
+                                        </ul>
+                                        <p class="green"><strong>Цілодобово</strong></p>
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                    </div> <!-- end of tab-content -->
+                    <!-- end of tabs content -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of facilities -->
+
+
+    <!-- Rooms -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="green">Комфорт і розслаблення</h2>
+                    <ul class="list-unstyled li-space-lg p-heading">
+                        <li class="address">Номери пропонують комфорт та релакс. Всі вони включають:</li>
+                        <br><li><i class="fas fa-wifi"></i>Безкоштовний Wi-Fi</li>
+                        <br>   <li><i class="fas fa-bath"></i>Власна ванна кімната</li>
+                        <br>  <li><i class="fas fa-tablet"></i>Шафа-холодильник</li>
+                        <br>  <li><i class="fas fa-tv"></i>Широкоформатний LCD</li>
+                        <br>  <li><i class="fas fa-snowflake"></i>Кондиціонер</li>
+                    </ul> <!-- end of list-unstyled -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/rooms-balcony-room.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Одномістний номер - 500грн/ніч</h3>
+                            <p>Для тих хто хоче просто відпочити</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#header-details-lightbox">Забронювати</a> 
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/rooms-panoramic-room.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Двомістний номер - 750грн/ніч</h3>
+                            <p>Для тих хто відпочиває в парі</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#header-details-lightbox">Забронювати</a> 
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/rooms-presidential-room.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Сімейний номер із зручностями - 1000грн/ніч</h3>
+                            <p>Підходить для відпочинку із родиною</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#header-details-lightbox">Забронювати</a> 
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of rooms -->
+
+
+
+
+
+
+
+    <!-- Location -->
+    <div class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="green">Де нас знайти</h2>
+                    <ul class="list-unstyled li-space-lg p-heading">
+                       
+                        <li><i class="fas fa-map-marker-alt"></i>Villa Odessa, Одесса. Україна</li>
+                        <li><i class="fas fa-phone"></i><a class="green" href="tel:">+38 096 121 22 22</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="green" href="mailto:reception@villa.com">reception@villaodessa.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40415.04207261327!2d30.632180058365122!3d46.33848495743712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1suk!2sua!4v1684910319021!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div> <!-- end of map-responsive -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of location -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="divider">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6">
+                   
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <p class="p-small statement">Copyright © <a href="#your-link">Name</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/bootstrap-datepicker.min.js"></script> <!-- Datepicker for Bootstrap -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
